@@ -17,6 +17,25 @@
         #message {
             margin-top: 20px; /* Espacio superior */
         }
+
+        /* Agrega la animación pulsante */
+        @keyframes pulsate {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1); /* Escala al 110% */
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        img {
+            width: 50%; /* Reducir el ancho al 50% del tamaño original */
+            height: auto; /* Mantener la proporción de aspecto */
+            animation: pulsate 2s infinite; /* Aplica la animación pulsante */
+        }
     </style>
 </head>
 <body>
@@ -24,17 +43,10 @@
         <h1>De: Jean</h1> <!-- Reemplaza "[Tu Nombre]" con el nombre adecuado -->
     </div>
     <div>
-        <img src="Paola.jpeg" alt="Imagen que has tomado"> <!-- Reemplaza "ruta_de_la_imagen.jpg" con la ruta de tu imagen -->
-        <style>
-            img {
-                width: 50%; /* Reducir el ancho al 50% del tamaño original */
-                height: auto; /* Mantener la proporción de aspecto */
-            }
-        </style>
-        
+        <img src="Paola.jpeg" alt="Imagen que has tomado"> <!-- Reemplaza "Paola.jpeg" con la ruta de tu imagen -->
     </div>
     <div id="message">
-        <p>Estoy sumamente orgulloso de ti Pinki Hermani, siempre lo he dicho y siempre lo dire ... Eres un gran ejemplo para mi en todas las cosas, gracias por ser mi hermana, gracias por estar ahi siempre </p>
+        <p>Estoy sumamente orgulloso de ti Pinki Hermani, siempre lo he dicho y siempre lo dire ... Eres un gran ejemplo para mi en todas las cosas, gracias por ser mi hermana, gracias por estar ahí siempre.</p>
     </div>
 </body>
 </html>
